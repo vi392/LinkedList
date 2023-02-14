@@ -1,0 +1,32 @@
+package LinkedList;
+
+// make a generic class because these class Access All types of DataType..
+public class NodeClass<T> {
+	 T data;
+	 NodeClass<T>next;
+	 
+	 NodeClass(T data){
+		 this.data=data;
+		 next=null;
+	 }
+	 
+} 
+
+package LinkedList;
+
+public class LinkedListUse {
+
+	public static void main(String[] args) {
+		// line no 7 is show a how to make node in linkedlist
+		NodeClass<Integer> node1= new NodeClass <Integer>(10);
+		System.out.println(node1.data);
+		System.out.println(node1.next);
+		NodeClass<Integer> node2 = new NodeClass <Integer>(20);
+		// line no 12 is show a how to link one node to another node in linkedlist.
+		node1.next= node2;
+		System.out.println(node1.next);
+		System.out.println(node2);
+		
+	}
+
+}
